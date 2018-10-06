@@ -1,6 +1,6 @@
-  client.on('ready', function(){
+ client.on('ready', function(){
     var ms = 1000 ;
-    var setGame = [`Forèst `,` Fhelp`,` Forèst`,`Fhelp`];
+    var setGame = [`$h `,` $he`,`$hel`,`$help`];
     var i = -1;
     var j = 0;
     setInterval(function (){
