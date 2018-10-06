@@ -1,5 +1,5 @@
   client.on("message", message => {
-        var prefix = "$"
+  let prefix = "بريفيكس بوتك";
     if(message.content.startsWith(prefix + "server")) {
         if(!message.member.hasPermission("MANAGE_GUILD")) return message.channel.send("**ليس لديك البرمشن المطلوب لاستخدام هذا الامر **");
         const embed = new Discord.RichEmbed()
