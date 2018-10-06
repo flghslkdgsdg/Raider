@@ -4,7 +4,7 @@ client.on('message', message => {
 
     var prefix = "F";
 
-    if(message.content.startsWith('Fbc')) {
+    if(message.content.startsWith('#bc')) {
 
     if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
 
@@ -17,15 +17,15 @@ client.on('message', message => {
 
     if (!args) return message.reply('**اكتب شي لي ارسال البرودكاست**');message.channel.send(`**هل أنت متأكد من إرسالك البرودكاست؟ \nمحتوى البرودكاست:** \` ${args}\``).then(msg => {
 
-    msg.react('✅')
+    msg.react('')
 
-    .then(() => msg.react('❌'))
+    .then(() => msg.react(''))
 
-    .then(() =>msg.react('✅'))
+    .then(() =>msg.react(''))
 
-    let reaction1Filter = (reaction, user) => reaction.emoji.name === '✅' && user.id === message.author.id;
+    let reaction1Filter = (reaction, user) => reaction.emoji.name === '' && user.id === message.author.id;
 
-    let reaction2Filter = (reaction, user) => reaction.emoji.name === '❌' && user.id === message.author.id;
+    let reaction2Filter = (reaction, user) => reaction.emoji.name === '' && user.id === message.author.id;
 
        let reaction1 = msg.createReactionCollector(reaction1Filter, { time: 12000 });
 
@@ -33,7 +33,7 @@ client.on('message', message => {
 
     reaction1.on("collect", r => {
 
-    message.channel.send(`☑ | Done ... The Broadcast Message Has Been Sent For ${message.guild.members.size} Members`).then(m => m.delete(5000));
+    message.channel.send(` | Done ... The Broadcast Message Has Been Sent For ${message.guild.members.size} Members`).then(m => m.delete(5000));
 
     message.guild.members.forEach(m => {
 
