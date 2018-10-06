@@ -1,5 +1,19 @@
-  client.on("message", message => {
+const Discord = require('discord.js');
   let prefix = "بريفيكس بوتك";
+const client = new Discord.Client();
+
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+
+client.on('message', msg => {
+  if (msg.content === 'ping') {
+    msg.reply('Pong!');
+  }
+});
+
+  
+client.on("message", message => {
   if(message.content.startsWith(prefix + "bc")) {
     let filter = m => m.author.id === message.author.id;
     let thisMessage;
