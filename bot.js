@@ -55,3 +55,6 @@ const prefix = '-'
     }
 
 });
+
+client.login(process.env.TOKEN);
+
