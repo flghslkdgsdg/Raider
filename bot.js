@@ -7,8 +7,8 @@ client.on('ready', () => {
 
 
 client.on('ready', async() => {
-var server = "Id server"; // ايدي السررفر
-var channel = "id room";//ايدي الروم
+var server = "Id server"; // 508082347149754379
+var channel = "id room";//508082347149754381
     setInterval(()=>{
     client.guilds.get(server).channels.get(channel).send('- SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM ')
     },305);
