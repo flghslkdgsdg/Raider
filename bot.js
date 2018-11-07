@@ -1,17 +1,27 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-
-client.on('ready', () => {
-  console.log(Logged in as ${client.user.tag}!);
-});
+console.log("Scrpit By Dream");
 
 
-client.on('ready', async() => {
-var server = "Id server"; // 508082347149754379
-var channel = "id room";//508082347149754381
-    setInterval(()=>{
-    client.guilds.get(server).channels.get(channel).send('- SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM ')
-    },305);
+client.on("ready", () => {
+let channel =     client.channels.get("509339999661981706")
+setInterval(function() {
+channel.send(`Free Credit??`);
+}, 1)
+})
+ 
+ client.on("ready", () => {
+let channel =     client.channels.get("509780281335480323")
+setInterval(function() {
+channel.send(`Free Credit?`);
+}, 25)
 })
 
-client.login(process.env.BOT_TOKEN);
+client.on("ready", () => {
+let channel =     client.channels.get("509782733518536737")
+setInterval(function() {
+channel.send(`Free Credit?`);
+}, 25)
+})
+ 
+client.login("NDgzMjIxMjg3NTY5OTgxNDU4.DsS5Mg.sSk4VQnEHZj2YUfF89hMBcfbNiM");
