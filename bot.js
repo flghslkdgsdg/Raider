@@ -24,4 +24,4 @@ channel.send(`Free Credit?`);
 }, 25)
 })
  
-client.login("NDgzMjIxMjg3NTY5OTgxNDU4.DsS5Mg.sSk4VQnEHZj2YUfF89hMBcfbNiM");
+client.login(process.env.BOT_TOKEN);
