@@ -32,7 +32,7 @@ if (message.content.startsWith(adminprefix + 'st')) {
 });
 
 const adminprefix = "+";
-const devs = ['427611667631964180'];
+const devs = ['412373041675370497'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
@@ -56,7 +56,7 @@ if (message.content.startsWith(adminprefix + 'st')) {
 client.on('message',function(message) {
     let args = message.content.split(" ").slice(1).join(" ");
    if(message.content.startsWith(adminprefix + "setWatch")) {
-       if(message.author.id !== '427611667631964180') return;
+       if(message.author.id !== '412373041675370497') return;
        client.user.setActivity(args,{type: 'WATCHING'});
        message.channel.send("**- :white_check_mark: Done!,**");
    } 
@@ -64,7 +64,7 @@ client.on('message',function(message) {
 client.on('message',function(message) {
     let args = message.content.split(" ").slice(1).join(" ");
    if(message.content.startsWith(adminprefix + "setListen")) {
-       if(message.author.id !== '427611667631964180') return;
+       if(message.author.id !== '412373041675370497') return;
        client.user.setActivity(args,{type: 'LISTENING'});
        message.channel.send("**- :white_check_mark: Done!,**");
    } 
